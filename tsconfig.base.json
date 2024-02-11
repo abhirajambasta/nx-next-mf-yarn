@@ -23,6 +23,7 @@
       ],
       "@hocs/with-styles": ["packages/hocs/withStyles/src/index.ts"],
       "@onboarding/*": ["apps/onboarding/*"],
+      "@traceability/*": ["apps/traceability/*"],
       "@shell/*": ["apps/shell/*"]
     }
   },

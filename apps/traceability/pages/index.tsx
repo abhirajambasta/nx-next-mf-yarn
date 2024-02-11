@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Button from '../components/atoms/button';
 import styles from './index.module.css';
 
 export function Home() {
@@ -8,12 +7,6 @@ export function Home() {
   return (
     <div className={styles['container']}>
       <h1>Welcome to TRACEABILITY!</h1>
-
-      <p>
-        Items: <strong>{items}</strong>
-      </p>
-
-      <Button onClick={() => setItems((x) => x + 1)} />
     </div>
   );
 }
