@@ -10,3 +10,6 @@ export const { className, styles } = css.resolve`
     justify-content: center;
   }
 `;
+
+// to-do check way out
+export default () => <></>;

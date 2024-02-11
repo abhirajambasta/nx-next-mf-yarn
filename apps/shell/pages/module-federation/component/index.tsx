@@ -2,7 +2,7 @@ import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import styles from './styles.module.css';
 
-const BuyButton = dynamic(() => import('onboarding/buy-button'));
+const BuyButton = dynamic(() => import('@onboarding/components/buy-button/buy-button'));
 
 export function Page() {
   const [count, setCount] = useState<number>(0);

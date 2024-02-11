@@ -29,7 +29,6 @@ export function Page({ className }) {
         )
       </h3>
       <Link href="/module-federation/component">component</Link>
-      <Link href="/module-federation/custom-hook">custom-hook</Link>
     </div>
   );
 }

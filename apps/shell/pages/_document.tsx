@@ -43,6 +43,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta name="robots" content="noindex" />
+          {/* @ts-expect-error Prop 'unknownProp' is not defined */}
           <FlushedChunks chunks={this.props?.chunks} />
         </Head>
 

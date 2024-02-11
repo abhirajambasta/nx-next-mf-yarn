@@ -34,6 +34,22 @@
       }
     }
   ],
+  "affected": {
+    "defaultBase": "main"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test"]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  },
   "generators": {
     "@nx/next": {
       "application": {
@@ -41,5 +57,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "shell"
 }
