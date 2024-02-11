@@ -10,3 +10,9 @@ declare module 'onboarding/button' {
   export * from '@onboarding/components/atoms/button';
   export { default } from '@onboarding/components/atoms/button';
 }
+
+
+declare module 'traceability/app' {
+  export * from '@traceability/pages';
+  export { default } from '@traceability/pages';
+}

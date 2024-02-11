@@ -2,18 +2,6 @@
 const { composePlugins, withNx } = require('@nx/next');
 const { NextFederationPlugin } = require('@module-federation/nextjs-mf');
 
-// this enables you to use import() and the webpack parser
-// loading remotes on demand, not ideal for SSR
-const remotes = (isServer) => {
-  const location = isServer ? 'ssr' : 'chunks';
-
-  return {
-    shell: `shell@${process.env.NEXT_PUBLIC_SHELL_URL}/_next/static/${location}/remoteEntry.js`,
-    onboarding: `onboarding@${process.env.NEXT_PUBLIC_ONBOARDING_URL}/_next/static/${location}/remoteEntry.js`,
-    traceability: `traceability@${process.env.NEXT_PUBLIC_TRACEABILITY_URL}/_next/static/${location}/remoteEntry.js`,
-  };
-};
-
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
  **/
@@ -28,16 +16,18 @@ const nextConfig = {
    * @param {import('webpack').Configuration} config
    * @returns {import('webpack').Configuration}
    */
-  webpack(config, { isServer }) {
+  webpack(config) {
     config.plugins.push(
       new NextFederationPlugin({
-        name: 'shell',
+        name: 'traceability',
         filename: 'static/chunks/remoteEntry.js',
-        remotes: remotes(isServer),
+        remotes: {},
         extraOptions: {
           automaticAsyncBoundary: true,
         },
-        exposes: {},
+        exposes: {
+          './app': './pages/index.tsx',
+        },
         shared: {},
       })
     );

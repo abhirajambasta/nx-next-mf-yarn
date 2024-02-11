@@ -1,1 +1,1 @@
-export { default } from '@shell/components/templates/Onboarding';
+export { default } from '@shell/components/templates/Traceability';
