@@ -1,13 +1,7 @@
 import Link from 'next/link';
-import { className, styles} from './styles';
+import { className, styles } from './styles';
 
-const withStyles = (Component) => (props) =>
-  (
-    <>
-      {styles}
-      <Component {...props} className={className} />;
-    </>
-  );
+import withStyles from '@hocs/with-styles';
 
 export function Page({ className }) {
   return (
@@ -33,4 +27,4 @@ export function Page({ className }) {
   );
 }
 
-export default withStyles(Page);
+export default withStyles(Page)(styles, className);

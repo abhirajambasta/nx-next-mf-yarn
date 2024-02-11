@@ -1,0 +1,19 @@
+{
+  "name": "withStyles",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/hocs/withStyles/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/hocs/withStyles",
+        "main": "packages/hocs/withStyles/src/index.ts",
+        "tsConfig": "packages/hocs/withStyles/tsconfig.lib.json",
+        "assets": ["packages/hocs/withStyles/*.md"]
+      }
+    }
+  },
+  "tags": []
+}

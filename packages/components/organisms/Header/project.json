@@ -1,0 +1,8 @@
+{
+  "name": "Header",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/components/organisms/Header/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

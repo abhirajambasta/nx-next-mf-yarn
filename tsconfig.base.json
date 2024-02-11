@@ -15,8 +15,15 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@shell/*": ["apps/shell/*"],
+      "@components/organisms/Error": [
+        "packages/components/organisms/Error/src/index.ts"
+      ],
+      "@components/organisms/Header": [
+        "packages/components/organisms/Header/src/index.ts"
+      ],
+      "@hocs/with-styles": ["packages/hocs/withStyles/src/index.ts"],
       "@onboarding/*": ["apps/onboarding/*"],
+      "@shell/*": ["apps/shell/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
