@@ -7,6 +7,9 @@
     "build": "NEXT_PRIVATE_LOCAL_WEBPACK=true nx build",
     "dev": "NEXT_PRIVATE_LOCAL_WEBPACK=true nx start"
   },
+  "engines": {
+    "node": ">= 18.17.0"
+  },
   "private": true,
   "dependencies": {
     "@adobe/react-spectrum": "^3.33.1",
