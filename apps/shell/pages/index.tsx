@@ -12,7 +12,7 @@ export function Page({ className }) {
         monorepository managed by Nx
       </p>
 
-      <h3 className="mt-5">Third party components (reactstrap)</h3>
+      <h3 className="mt-5">Third party components (@adobe/react-spectrum)</h3>
       <Link href="/design-system/buttons">buttons</Link>
 
       <h3 className="mt-3">

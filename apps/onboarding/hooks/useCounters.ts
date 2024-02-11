@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export function useAddToCartHook() {
+export function useCounters() {
   const [itemsCount, setItemsCount] = useState<number>(0);
   return {
     itemsCount,
@@ -9,4 +9,4 @@ export function useAddToCartHook() {
   };
 }
 
-export default useAddToCartHook;
+export default useCounters;

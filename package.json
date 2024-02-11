@@ -5,7 +5,8 @@
   "scripts": {
     "start": "NEXT_PRIVATE_LOCAL_WEBPACK=true nx serve",
     "build": "NEXT_PRIVATE_LOCAL_WEBPACK=true nx build",
-    "dev": "NEXT_PRIVATE_LOCAL_WEBPACK=true nx start"
+    "dev": "NEXT_PRIVATE_LOCAL_WEBPACK=true nx start",
+    "visualise": "nx graph"
   },
   "engines": {
     "node": ">= 18.17.0"

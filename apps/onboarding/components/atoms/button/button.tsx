@@ -1,6 +1,6 @@
 import { HTMLAttributes } from 'react';
 
-import styles from './buy-button.module.css';
+import styles from './button.module.css';
 
 /* eslint-disable-next-line */
 export interface BuyButtonProps extends HTMLAttributes<HTMLButtonElement> {}
@@ -8,7 +8,7 @@ export interface BuyButtonProps extends HTMLAttributes<HTMLButtonElement> {}
 export function BuyButton({ children, ...props }: BuyButtonProps) {
   return (
     <button className={styles['button']} {...props}>
-      {children || `Buy now!`}
+      {children || `Click me`}
     </button>
   );
 }

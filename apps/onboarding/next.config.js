@@ -26,8 +26,8 @@ const nextConfig = {
           automaticAsyncBoundary: true,
         },
         exposes: {
-          './buy-button': './components/buy-button/buy-button.tsx',
-          './useAddToCartHook': './hooks/useAddToCart.ts',
+          './button': './components/atoms/button/button.tsx',
+          './useCounters': './hooks/useCounters.ts',
         },
         shared: {},
       })

@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@components/organisms/Error": [
-        "packages/components/organisms/Error/src/index.ts"
+      "@components/organisms/ErrorBoundary": [
+        "packages/components/organisms/ErrorBoundary/src/index.ts"
       ],
       "@components/organisms/Header": [
         "packages/components/organisms/Header/src/index.ts"

@@ -1,7 +1,7 @@
 {
-  "name": "Error",
+  "name": "ErrorBoundary",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/components/organisms/Error/src",
+  "sourceRoot": "packages/components/organisms/ErrorBoundary/src",
   "projectType": "library",
   "tags": [],
   "targets": {}

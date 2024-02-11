@@ -1,19 +1,19 @@
 import { useState } from 'react';
-import BuyButton from '../components/buy-button/buy-button';
+import Button from '../components/atoms/button';
 import styles from './index.module.css';
 
 export function Home() {
-  const [cartItems, setCartItems] = useState<number>(0);
+  const [items, setItems] = useState<number>(0);
 
   return (
     <div className={styles['container']}>
       <h1>Welcome to ONBOARDING!</h1>
 
       <p>
-        Cart Items: <strong>{cartItems}</strong>
+        Items: <strong>{items}</strong>
       </p>
 
-      <BuyButton onClick={() => setCartItems((x) => x + 1)} />
+      <Button onClick={() => setItems((x) => x + 1)} />
     </div>
   );
 }

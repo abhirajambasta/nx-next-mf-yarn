@@ -2,7 +2,7 @@ import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import styles from './styles.module.css';
 
-const BuyButton = dynamic(() => import('@onboarding/components/buy-button/buy-button'));
+const Button = dynamic(() => import('onboarding/button'));
 
 export function Page() {
   const [count, setCount] = useState<number>(0);
@@ -20,12 +20,12 @@ export function Page() {
 
       <div className="row mt-3">
         <div className="col">
-          <BuyButton onClick={() => setCount((i) => i + 1)}>
-            Add to Cart
-          </BuyButton>
+          <Button onClick={() => setCount((i) => i + 1)}>
+            Add items
+          </Button>
         </div>
         <div className="col ml-3">
-          <BuyButton onClick={() => setCount(0)}>Clear Cart</BuyButton>
+          <Button onClick={() => setCount(0)}>Clear items</Button>
         </div>
       </div>
     </div>

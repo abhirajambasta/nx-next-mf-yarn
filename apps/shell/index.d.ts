@@ -6,12 +6,7 @@ declare module '*.svg' {
   export default content;
 }
 
-declare module 'checkout/useAddToCartHook' {
-  export * from '@checkout/hooks/useAddToCart';
-  export { default } from '@checkout/hooks/useAddToCart';
-}
-
-declare module 'checkout/buy-button' {
-  export * from '@checkout/components/buy-button/buy-button';
-  export { default } from '@checkout/components/buy-button/buy-button';
+declare module 'onboarding/button' {
+  export * from '@onboarding/components/atoms/button';
+  export { default } from '@onboarding/components/atoms/button';
 }
