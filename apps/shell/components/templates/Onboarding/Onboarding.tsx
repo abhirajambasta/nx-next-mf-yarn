@@ -21,11 +21,11 @@ export function Page() {
       <div className="row mt-3">
         <div className="col">
           <Button onClick={() => setCount((i) => i + 1)}>
-            Add items
+            Increase Counter
           </Button>
         </div>
         <div className="col ml-3">
-          <Button onClick={() => setCount(0)}>Clear items</Button>
+          <Button onClick={() => setCount(0)}>Clear counter</Button>
         </div>
       </div>
     </div>
