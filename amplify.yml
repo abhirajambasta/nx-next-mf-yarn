@@ -5,7 +5,7 @@ applications:
       phases:
         preBuild:
           commands:
-            - yarn set version classical
+            - yarn set version classic
             - yarn install --immutable
         build:
           commands:
@@ -20,7 +20,7 @@ applications:
       phases:
         preBuild:
           commands:
-            - yarn set version classical
+            - yarn set version classic
             - yarn install --immutable
         build:
           commands:
@@ -38,7 +38,7 @@ applications:
       phases:
         preBuild:
           commands:
-            - yarn set version classical
+            - yarn set version classic
             - yarn install --immutable
         build:
           commands:
