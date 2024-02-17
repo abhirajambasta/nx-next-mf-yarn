@@ -5,6 +5,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - yarn set version stable
             - yarn install --immutable
         build:
           commands:
@@ -19,6 +20,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - yarn set version stable
             - yarn install --immutable
         build:
           commands:
@@ -36,6 +38,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - yarn set version stable
             - yarn install --immutable
         build:
           commands:
