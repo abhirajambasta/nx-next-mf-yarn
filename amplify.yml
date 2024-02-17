@@ -7,11 +7,12 @@ applications:
           commands:
             - rm -rf node_modules
             - rm -rf .yarn/cache
-            - yarn install --frozen-lockfile
+            - yarn install --immutable
             - yarn -v
         build:
           commands:
             - yarn build shell --verbose
+            - rm -rf .amplify/cache
       artifacts:
         baseDirectory: dist/apps/shell/.next
         files:
@@ -27,11 +28,12 @@ applications:
           commands:
             - rm -rf node_modules
             - rm -rf .yarn/cache
-            - yarn install --frozen-lockfile
+            - yarn install --immutable
             - yarn -v
         build:
           commands:
             - yarn build onboarding --verbose
+            - rm -rf .amplify/cache
       artifacts:
         baseDirectory: dist/apps/onboarding/.next
         files:
@@ -50,11 +52,12 @@ applications:
           commands:
             - rm -rf node_modules
             - rm -rf .yarn/cache
-            - yarn install --frozen-lockfile
+            - yarn install --immutable
             - yarn -v
         build:
           commands:
             - yarn build traceability --verbose
+            - rm -rf .amplify/cache
       artifacts:
         baseDirectory: dist/apps/traceability/.next
         files:
