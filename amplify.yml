@@ -5,42 +5,28 @@ applications:
       phases:
         preBuild:
           commands:
-            - rm -rf node_modules
-            - rm -rf .yarn/cache
             - yarn install --immutable
-            - yarn -v
         build:
           commands:
             - yarn build shell --verbose
-            - rm -rf .amplify/cache
       artifacts:
         baseDirectory: dist/apps/shell/.next
         files:
           - '**/*'
-      cache:
-        paths:
-          - .yarn/cache/**/*
       buildPath: /
   - appRoot: apps/onboarding
     frontend:
       phases:
         preBuild:
           commands:
-            - rm -rf node_modules
-            - rm -rf .yarn/cache
             - yarn install --immutable
-            - yarn -v
         build:
           commands:
             - yarn build onboarding --verbose
-            - rm -rf .amplify/cache
       artifacts:
         baseDirectory: dist/apps/onboarding/.next
         files:
           - '**/*'
-      cache:
-        paths:
-          - .yarn/cache/**/*
       buildPath: /
   - appRoot: apps/traceability
     env:
@@ -50,20 +36,13 @@ applications:
       phases:
         preBuild:
           commands:
-            - rm -rf node_modules
-            - rm -rf .yarn/cache
             - yarn install --immutable
-            - yarn -v
         build:
           commands:
             - yarn build traceability --verbose
-            - rm -rf .amplify/cache
       artifacts:
         baseDirectory: dist/apps/traceability/.next
         files:
           - '**/*'
-      cache:
-        paths:
-          - .yarn/cache/**/*
       buildPath: /
   
