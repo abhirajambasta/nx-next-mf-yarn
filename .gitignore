@@ -39,6 +39,7 @@ testem.log
 Thumbs.db
 
 .nx/cache
+.yarn/cache
 
 # Next.js
 .next

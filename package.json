@@ -6,7 +6,15 @@
     "start": "NEXT_PRIVATE_LOCAL_WEBPACK=true nx serve",
     "build": "NEXT_PRIVATE_LOCAL_WEBPACK=true nx build",
     "dev": "NEXT_PRIVATE_LOCAL_WEBPACK=true nx start",
-    "visualise": "nx graph"
+    "prod": "yarn install && yarn run build && yarn run size",
+    "lint:js": "echo lint needs configuration",
+    "lint:css": "echo stylelint needs configuration",
+    "lint": "yarn run lint:js && yarn run lint:css",
+    "test": "echo test needs configuration",
+    "visualise": "nx graph",
+    "size": "size-limit",
+    "precommit": "yarn run lint",
+    "prepush": "yarn run test"
   },
   "engines": {
     "node": ">= 18.17.0"
@@ -26,8 +34,10 @@
     "@babel/preset-react": "^7.14.5",
     "@babel/runtime": "^7.23.9",
     "@module-federation/nextjs-mf": "^8.1.10",
+    "@nrwl/eslint-plugin-nx": "^18.0.4",
     "@nx/eslint": "18.0.4",
     "@nx/eslint-plugin": "18.0.4",
+    "@nx/eslint-plugin-nx": "16.0.0-beta.1",
     "@nx/jest": "18.0.4",
     "@nx/js": "18.0.4",
     "@nx/linter": "^18.0.4",
@@ -42,6 +52,7 @@
     "@types/node": "18.16.9",
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
     "autoprefixer": "^10.4.17",
     "babel-jest": "^29.4.1",
     "eslint": "^8.56.0",
@@ -57,6 +68,7 @@
     "nx": "18.0.4",
     "postcss": "^8.4.35",
     "prettier": "^2.6.2",
+    "size-limit": "^11.0.2",
     "tailwindcss": "^3.4.1",
     "tapable": "^2.2.1",
     "ts-jest": "^29.1.0",
