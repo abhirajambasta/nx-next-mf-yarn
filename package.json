@@ -75,5 +75,6 @@
     "ts-node": "10.9.1",
     "typescript": "~5.3.2",
     "webpack": "5.90.1"
-  }
+  },
+  "packageManager": "yarn@4.1.0"
 }
