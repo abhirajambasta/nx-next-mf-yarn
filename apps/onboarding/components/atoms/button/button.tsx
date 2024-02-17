@@ -7,9 +7,12 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {}
 
 export function BuyButton({ children, ...props }: ButtonProps) {
   return (
-    <button className={styles['button']} {...props}>
-      {children || `Click me`}
-    </button>
+    <>
+      <p className="text-2xl font-bold mb-4">Styled text</p>
+      <button className={styles['button']} {...props}>
+        {children || `Click me`}
+      </button>
+    </>
   );
 }
 

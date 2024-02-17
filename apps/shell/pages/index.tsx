@@ -21,9 +21,6 @@ export function Page({ className }) {
       <Link href="/design-system/buttons">buttons</Link>
 
       <br />
-      <br />
-      <br />
-      <br />
 
       <h3 className="mt-5">Module Federation on Route Change</h3>
       <Link href="/module-federation/component">component</Link>

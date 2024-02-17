@@ -9,7 +9,8 @@
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/shell",
-        "outputPath": "dist/apps/shell"
+        "outputPath": "dist/apps/shell",
+        "postcssConfig": "apps/sehll/postcss.config.js"
       },
       "configurations": {
         "development": {},
@@ -22,7 +23,8 @@
       "options": {
         "buildTarget": "shell:build",
         "dev": true,
-        "port": 4100
+        "port": 4100,
+        "postcssConfig": "apps/sehll/postcss.config.js"
       },
       "configurations": {
         "development": {
