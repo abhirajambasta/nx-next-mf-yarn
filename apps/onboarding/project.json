@@ -1,4 +1,5 @@
 {
+  "name": "onboarding",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/onboarding",
   "projectType": "application",
@@ -43,7 +44,7 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["coverage/apps/onboarding"],
+      "outputs": ["{workspaceRoot}/coverage/apps/onboarding"],
       "options": {
         "jestConfig": "apps/onboarding/jest.config.ts",
         "passWithNoTests": true

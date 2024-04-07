@@ -45,3 +45,6 @@ Thumbs.db
 .next
 
 .env
+
+# Test Files
+coverage

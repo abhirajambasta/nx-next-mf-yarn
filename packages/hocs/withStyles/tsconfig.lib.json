@@ -7,5 +7,5 @@
     "types": ["node"]
   },
   "include": ["src/**/*.ts", "src/lib/with-styles.tsx"],
-  "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"]
+  "exclude": ["jest.config.ts", "src/**/*.spec.tsx", "src/**/*.test.ts"]
 }

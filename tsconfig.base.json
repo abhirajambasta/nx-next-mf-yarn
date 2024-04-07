@@ -23,9 +23,10 @@
       ],
       "@hocs/with-styles": ["packages/hocs/withStyles/src/index.ts"],
       "@onboarding/*": ["apps/onboarding/*"],
-      "@traceability/*": ["apps/traceability/*"],
-      "@shell/*": ["apps/shell/*"]
+      "@shell/*": ["apps/shell/*"],
+      "@traceability/*": ["apps/traceability/*"]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp", "tests", "specs"],
+  "include": ["./testing/jest-setup.ts"]
 }

@@ -1,4 +1,5 @@
 {
+  "name": "traceability",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/traceability",
   "projectType": "application",
@@ -43,7 +44,7 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["coverage/apps/traceability"],
+      "outputs": ["{workspaceRoot}/coverage/apps/traceability"],
       "options": {
         "jestConfig": "apps/traceability/jest.config.ts",
         "passWithNoTests": true
