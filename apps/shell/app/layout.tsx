@@ -4,9 +4,13 @@ import './global-styles.css';
 
 export default function Layout({ children }) {
   return (
-    <StyledJsxRegistry>
-        <Header />
-        <main className="app">{children}</main>
-    </StyledJsxRegistry>
+    <html>
+      <body>
+        <StyledJsxRegistry>
+          <Header />
+          <main className="app">{children}</main>
+      </StyledJsxRegistry>
+      </body>
+    </html>
   );
 }
