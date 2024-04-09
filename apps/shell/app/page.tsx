@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Welcome to shell!',
 }
 
-export function Page() {
+function Page() {
   return (
     <div className={`${styles.container}`}>
       <h3 className="mt-3">
