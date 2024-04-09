@@ -29,18 +29,18 @@ const nextConfig = {
    * @returns {import('webpack').Configuration}
    */
   webpack(config, { isServer }) {
-    config.plugins.push(
-      new NextFederationPlugin({
-        name: 'shell',
-        filename: 'static/chunks/remoteEntry.js',
-        remotes: remotes(isServer),
-        extraOptions: {
-          automaticAsyncBoundary: true,
-        },
-        exposes: {},
-        shared: {},
-      })
-    );
+    // config.plugins.push(
+    //   new NextFederationPlugin({
+    //     name: 'shell',
+    //     filename: 'static/chunks/remoteEntry.js',
+    //     remotes: remotes(isServer),
+    //     extraOptions: {
+    //       automaticAsyncBoundary: true,
+    //     },
+    //     exposes: {},
+    //     shared: {},
+    //   })
+    // );
 
     return config;
   },

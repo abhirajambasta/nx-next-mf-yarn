@@ -5,7 +5,7 @@ import {
   FlushedChunks,
   flushChunks,
 } from '@module-federation/nextjs-mf/utils';
-import { StyledJsxRegistry } from 'registry';
+import { StyledJsxRegistry } from '@shell/utils/styles/registry';
 
 import {
   Provider as SpectrumProvider,
