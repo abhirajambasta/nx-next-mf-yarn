@@ -18,10 +18,13 @@ function Page() {
         </a>
         )
       </h3>
-      {/* <Onboarding /> */}
-
       <h3 className="mt-5">Third party components (@adobe/react-spectrum)</h3>
       <Link href="/design-system/buttons">buttons</Link>
+      <br />
+
+      <h3 className="mt-5">Get to traceability</h3>
+      <Link href="/traceability">traceability</Link>
+
 
       <br />
 

@@ -11,30 +11,7 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
-  /**
-   *
-   * @param {import('webpack').Configuration} config
-   * @returns {import('webpack').Configuration}
-   */
-  webpack(config) {
-    config.plugins.push(
-      new NextFederationPlugin({
-        name: 'onboarding',
-        filename: 'static/chunks/remoteEntry.js',
-        remotes: {},
-        extraOptions: {
-          automaticAsyncBoundary: true,
-        },
-        exposes: {
-          './button': './components/atoms/button/button.tsx',
-          './useCounters': './hooks/useCounters.ts',
-        },
-        shared: {},
-      })
-    );
-
-    return config;
-  },
+  basePath: '/onboarding',
 };
 
 module.exports = withNx(nextConfig);
