@@ -1,3 +1,4 @@
+'use client'
 import { Button } from '@adobe/react-spectrum';
 
 import styles from './styles.module.css';
